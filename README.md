@@ -1,7 +1,7 @@
 <h1 align="center">I'm Danial 👋</h1>
 
 <p align="center">
-  <b>Developer • Dreamer • Future Founder</b><br>
+  <b>Developer • Future Founder</b><br>
   I build things, learn fast, and love turning ideas into reality 🚀
 </p>
 
@@ -46,8 +46,7 @@
 
 ### 🌐 Find Me Online
 - 🌍 [danial-karimi.github.io](https://danial-karimi.github.io)  
-- 💼 *(Add LinkedIn or other socials here)*  
-- 📧 *(Add your email here if you want)*  
+- 💼 *(in/danialkarimidev)*  
 
 ---
 
