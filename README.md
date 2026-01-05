@@ -1,17 +1,17 @@
 <h1 align="center">I'm Danial 👋</h1>
 
 <p align="center">
-  <b>Developer • Future Founder</b><br>
-  I build things, learn fast, and love turning ideas into reality 🚀
+  <b>Ai and Python Developer
+  </b><br>
+  I build things and love turning ideas into reality 🚀
 </p>
 
 ---
 
 ### 🧩 About Me
 - 💻 Passionate about coding and learning every single day.  
-- 🧠 Interested in AI, data, and modern development.  
-- 🌱 Currently sharpening my skills through personal and open-source projects.  
-- 🚀 My goal: to build my own startup someday.  
+- 🧠 Interested in AI, ML , Deep learning, data, and modern development.  
+- 🚀 My goal: to build my own startup.
 
 ---
 
@@ -33,17 +33,6 @@
 
 ---
 
-### 📊 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Danial-Karimi&show_icons=true&theme=tokyonight" alt="Danial's GitHub stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Danial-Karimi&layout=compact&theme=tokyonight" alt="Top Languages" />
-</p>
-
----
-
 ### 🌐 Find Me Online
 - 🌍 [danial-karimi.github.io](https://danial-karimi.github.io)  
 - 💼 *(https://in/danialkarimidev)*  
@@ -52,6 +41,4 @@
 
 <p align="center">
   ⭐ “Keep coding, keep growing.” ⭐
-</p>  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="50" />
 </p>
