@@ -22,7 +22,7 @@
 
 ### 🌐 Find Me Online
 - 🌍 [Personal Website](https://danial-karimi.github.io)  
-- 💼 [LinkedIn](https://danial-karimi.github.io)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/danialkarimidev)  
  
 
 ---
