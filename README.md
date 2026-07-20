@@ -1,32 +1,51 @@
-<h1 align="center">I'm Danial 👋</h1>
+<div align="center">
 
-<p align="center">
-  <b>Ai and Python Developer
-  </b><br>
-  I build things and love turning ideas into reality 🚀
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=38&duration=3500&pause=1000&color=8B5CF6&center=true&vCenter=true&width=900&lines=Danial+Karimi;Artificial+Intelligence;Building+Intelligent+Systems;Always+Learning..." />
 
----
+<br>
 
-### 🧩 About Me
-- 💻 Passionate about coding and learning every day.
-- 🧠 Interested in AI, ML , Deep learning, data, and modern development.
----
+# Artificial Intelligence
 
-<p align="center">
-  <!-- Skill Logos -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="55" />
-</p>
+Building intelligent systems for tomorrow.
+
+</div>
 
 ---
 
-### 🌐 Find Me Online
-- 🌍 [Personal Website](https://danial-karimi.github.io)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/danialkarimidev)  
- 
+<div align="center">
+
+### Vision
+
+Exploring Artificial Intelligence.
+
+Learning continuously.
+
+Building meaningful technology.
+
+</div>
+
+<br>
+
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Danial-Karimi&show_icons=true&hide_border=true&bg_color=00000000&title_color=A855F7&icon_color=A855F7&text_color=FFFFFF"/>
+
+<img height="170" src="https://streak-stats.demolab.com?user=Danial-Karimi&theme=tokyonight&hide_border=true"/>
+
+</div>
+
+<br>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Danial-Karimi&theme=tokyo-night&hide_border=true"/>
+
+</div>
 
 ---
 
-<p align="center">
-  ⭐ “Keep coding, keep growing.” ⭐
-</p>
+<div align="center">
+
+> *"The future belongs to those who build intelligent systems."*
+
+</div>
