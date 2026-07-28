@@ -1,220 +1,240 @@
-<svg width="1280" height="420" viewBox="0 0 1280 420" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420">
 
 <defs>
 
-<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
 <stop offset="0%" stop-color="#050816"/>
-<stop offset="45%" stop-color="#0F172A"/>
-<stop offset="100%" stop-color="#1E1B4B"/>
+<stop offset="55%" stop-color="#0b1024"/>
+<stop offset="100%" stop-color="#1d0b42"/>
 </linearGradient>
 
-<linearGradient id="primary" x1="0%" y1="0%" x2="100%">
-<stop offset="0%" stop-color="#7C3AED"/>
-<stop offset="100%" stop-color="#38BDF8"/>
-</linearGradient>
-
-<linearGradient id="glass" x1="0%" y1="0%" x2="100%">
-<stop offset="0%" stop-color="#ffffff22"/>
-<stop offset="100%" stop-color="#ffffff08"/>
+<linearGradient id="text">
+<stop offset="0%" stop-color="#a855f7"/>
+<stop offset="100%" stop-color="#38bdf8"/>
 </linearGradient>
 
 <filter id="glow">
-<feGaussianBlur stdDeviation="6"/>
+<feGaussianBlur stdDeviation="5" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
 </filter>
 
-<filter id="softGlow">
+<filter id="glass">
 <feGaussianBlur stdDeviation="18"/>
 </filter>
 
-</defs>
+<clipPath id="typing">
+<rect x="90" y="235" width="0" height="30">
+<animate
+attributeName="width"
+values="0;310;310"
+dur="4s"
+repeatCount="indefinite"/>
+</rect>
+</clipPath>
 
-<!-- Background -->
+</defs>
 
 <rect width="1280" height="420" fill="url(#bg)"/>
 
-<!-- Glow -->
+<!-- background grid -->
 
-<circle cx="1060" cy="120" r="120"
-fill="#6D28D9"
-opacity=".25"
-filter="url(#softGlow)">
-<animate attributeName="r"
-values="110;140;110"
-dur="5s"
-repeatCount="indefinite"/>
-</circle>
+<g stroke="#ffffff10">
 
-<circle cx="220" cy="330" r="80"
-fill="#38BDF8"
-opacity=".15"
-filter="url(#softGlow)">
-<animate attributeName="r"
-values="70;95;70"
-dur="4s"
-repeatCount="indefinite"/>
-</circle>
+<path d="M0 80H1280"/>
+<path d="M0 160H1280"/>
+<path d="M0 240H1280"/>
+<path d="M0 320H1280"/>
 
-<!-- AI Network -->
-
-<g stroke="#5EEAD4" stroke-width="1.4" opacity=".45">
-
-<line x1="880" y1="70" x2="980" y2="120"/>
-<line x1="980" y1="120" x2="1100" y2="80"/>
-<line x1="980" y1="120" x2="1070" y2="190"/>
-<line x1="880" y1="70" x2="930" y2="220"/>
-<line x1="930" y1="220" x2="1070" y2="190"/>
-<line x1="1070" y1="190" x2="1170" y2="160"/>
-<line x1="1100" y1="80" x2="1170" y2="160"/>
+<path d="M160 0V420"/>
+<path d="M320 0V420"/>
+<path d="M480 0V420"/>
+<path d="M640 0V420"/>
+<path d="M800 0V420"/>
+<path d="M960 0V420"/>
+<path d="M1120 0V420"/>
 
 </g>
 
-<!-- Nodes -->
+<!-- glow -->
 
-<g fill="#67E8F9">
+<circle cx="1080" cy="120" r="120"
+fill="#7c3aed"
+opacity=".22"
+filter="url(#glass)"/>
 
-<circle cx="880" cy="70" r="5">
-<animate attributeName="r" values="5;8;5" dur="2.8s" repeatCount="indefinite"/>
-</circle>
+<circle cx="260" cy="350" r="70"
+fill="#38bdf8"
+opacity=".18"
+filter="url(#glass)"/>
 
-<circle cx="980" cy="120" r="6">
-<animate attributeName="fill"
-values="#67E8F9;#A855F7;#67E8F9"
-dur="3s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1100" cy="80" r="5"/>
-
-<circle cx="930" cy="220" r="5"/>
-
-<circle cx="1070" cy="190" r="6"/>
-
-<circle cx="1170" cy="160" r="5"/>
-
-</g>
-
-<!-- Floating Particles -->
-
-<g fill="#38BDF8">
-
-<circle cx="120" cy="90" r="2">
-<animate attributeName="cy"
-values="90;60;90"
-dur="5s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="520" cy="60" r="2">
-<animate attributeName="cy"
-values="60;20;60"
-dur="6s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="760" cy="340" r="2">
-<animate attributeName="cy"
-values="340;300;340"
-dur="4s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1190" cy="300" r="2">
-<animate attributeName="cy"
-values="300;250;300"
-dur="7s"
-repeatCount="indefinite"/>
-</circle>
-
-</g>
-
-<!-- Glass Card -->
+<!-- glass panel -->
 
 <rect
-x="60"
-y="70"
+x="55"
+y="55"
 rx="28"
-ry="28"
-width="690"
-height="280"
-fill="url(#glass)"
-stroke="#ffffff18"/>
+width="700"
+height="300"
+fill="#ffffff08"
+stroke="#ffffff22"/>
 
-<!-- Name -->
+<!-- title -->
 
 <text
-x="95"
-y="155"
+x="90"
+y="145"
 font-size="64"
 font-family="Segoe UI"
 font-weight="700"
-fill="url(#primary)"
+fill="url(#text)"
 filter="url(#glow)">
-
 Danial Karimi
-
 </text>
 
-<!-- Subtitle -->
-
 <text
-x="95"
-y="205"
-font-size="28"
-font-family="Segoe UI"
-fill="#E2E8F0">
-
+x="92"
+y="190"
+font-size="26"
+fill="#dbeafe"
+font-family="Segoe UI">
 AI Engineer • Computer Engineer
-
 </text>
 
-<!-- Typing -->
+<!-- typing -->
+
+<g clip-path="url(#typing)">
 
 <text
-x="95"
-y="255"
+x="92"
+y="245"
 font-size="22"
-font-family="Consolas"
-fill="#38BDF8">
-
-Building Intelligent Systems_
-
-<animate
-attributeName="opacity"
-values="1;0;1"
-dur="1s"
-repeatCount="indefinite"/>
-
+fill="#38bdf8"
+font-family="Consolas">
+Building Intelligent Systems
 </text>
-
-<!-- Skills -->
-
-<g font-family="Segoe UI" font-size="18">
-
-<rect x="95" y="290" rx="14" width="92" height="32" fill="#7C3AED33"/>
-<text x="114" y="311" fill="#fff">Python</text>
-
-<rect x="205" y="290" rx="14" width="70" height="32" fill="#38BDF833"/>
-<text x="228" y="311" fill="#fff">C#</text>
-
-<rect x="290" y="290" rx="14" width="150" height="32" fill="#06B6D433"/>
-<text x="312" y="311" fill="#fff">Machine Learning</text>
-
-<rect x="455" y="290" rx="14" width="120" height="32" fill="#9333EA33"/>
-<text x="476" y="311" fill="#fff">Deep Learning</text>
-
-<rect x="590" y="290" rx="14" width="95" height="32" fill="#0EA5E933"/>
-<text x="615" y="311" fill="#fff">Linux</text>
 
 </g>
 
-<!-- Animated Scanner -->
+<rect x="398" y="224" width="3" height="24" fill="#38bdf8">
+<animate attributeName="opacity"
+values="1;0;1"
+dur="1s"
+repeatCount="indefinite"/>
+</rect>
 
-<rect x="60" y="70" width="690" height="4" fill="#38BDF8" opacity=".7">
+<!-- skill pills -->
+
+<g font-family="Segoe UI" font-size="16">
+
+<rect x="90" y="285" rx="14" width="90" height="30" fill="#7c3aed55"/>
+<text x="113" y="305" fill="white">Python</text>
+
+<rect x="190" y="285" rx="14" width="60" height="30" fill="#0ea5e955"/>
+<text x="212" y="305" fill="white">C#</text>
+
+<rect x="260" y="285" rx="14" width="120" height="30" fill="#06b6d455"/>
+<text x="280" y="305" fill="white">PyTorch</text>
+
+<rect x="392" y="285" rx="14" width="130" height="30" fill="#9333ea55"/>
+<text x="414" y="305" fill="white">TensorFlow</text>
+
+</g>
+
+<!-- AI Brain -->
+
+<g
+stroke="#61dafb"
+stroke-width="2"
+fill="none"
+opacity=".95">
+
+<line x1="865" y1="90" x2="940" y2="120"/>
+<line x1="940" y1="120" x2="1015" y2="85"/>
+<line x1="940" y1="120" x2="980" y2="190"/>
+<line x1="980" y1="190" x2="1080" y2="170"/>
+<line x1="1015" y1="85" x2="1110" y2="110"/>
+<line x1="1110" y1="110" x2="1150" y2="180"/>
+<line x1="1080" y1="170" x2="1150" y2="180"/>
+<line x1="930" y1="220" x2="980" y2="190"/>
+<line x1="930" y1="220" x2="865" y2="170"/>
+<line x1="865" y1="170" x2="865" y2="90"/>
+
+<circle cx="865" cy="90" r="6"/>
+<circle cx="940" cy="120" r="7"/>
+<circle cx="1015" cy="85" r="5"/>
+<circle cx="980" cy="190" r="6"/>
+<circle cx="1080" cy="170" r="6"/>
+<circle cx="1110" cy="110" r="5"/>
+<circle cx="1150" cy="180" r="6"/>
+<circle cx="930" cy="220" r="5"/>
+<circle cx="865" cy="170" r="5"/>
+
+</g>
+
+<!-- pulse -->
+
+<circle cx="940" cy="120" r="8"
+fill="#38bdf8">
+
+<animate
+attributeName="r"
+values="8;13;8"
+dur="2s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- particles -->
+
+<g fill="#7dd3fc">
+
+<circle cx="80" cy="70" r="2">
+<animate attributeName="cy"
+values="70;50;70"
+dur="4s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="400" cy="60" r="2">
+<animate attributeName="cy"
+values="60;30;60"
+dur="5s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="760" cy="320" r="2">
+<animate attributeName="cy"
+values="320;290;320"
+dur="6s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="1180" cy="320" r="2">
+<animate attributeName="cy"
+values="320;270;320"
+dur="5s"
+repeatCount="indefinite"/>
+</circle>
+
+</g>
+
+<!-- scanner -->
+
+<rect
+x="55"
+y="55"
+width="700"
+height="3"
+fill="#38bdf8"
+opacity=".8">
 
 <animate
 attributeName="y"
-values="70;346;70"
-dur="6s"
+values="55;352;55"
+dur="7s"
 repeatCount="indefinite"/>
 
 </rect>
