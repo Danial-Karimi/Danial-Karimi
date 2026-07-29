@@ -25,10 +25,8 @@ class DanialKarimi:
 
 ## 👨‍💻 About Me
 
-I'm Danial Karimi, an aspiring **AI Engineer** and **Computer Engineering** student with a passion for building intelligent software and solving real-world problems through technology.
+I'm Danial Karimi, an AI Engineer, Computer Engineering student, and Founder focused on Artificial Intelligence, Machine Learning, and Software Development.
 
 I'm currently expanding my expertise in **Artificial Intelligence**, **Machine Learning**, **Deep Learning**, and **Software Engineering** while building projects with **Python** and modern AI frameworks.
-
-Beyond engineering, I aspire to become a **Founder**, creating technology that delivers meaningful impact through innovation and continuous learning.
 
 > *"Building Intelligent Systems, One Project at a Time."* 🚀
