@@ -1,181 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
 
 <defs>
 
 <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-<stop offset="0%" stop-color="#050816"/>
-<stop offset="100%" stop-color="#0f172a"/>
+<stop offset="0%" stop-color="#0F172A"/>
+<stop offset="100%" stop-color="#111827"/>
 </linearGradient>
 
-<linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="0%">
-<stop offset="0%" stop-color="#8b5cf6"/>
-<stop offset="100%" stop-color="#38bdf8"/>
+<linearGradient id="name" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#8B5CF6"/>
+<stop offset="100%" stop-color="#38BDF8"/>
 </linearGradient>
-
-<filter id="glow">
-<feGaussianBlur stdDeviation="3"/>
-</filter>
 
 </defs>
 
 <!-- Background -->
 
-<rect width="1200" height="320" fill="url(#bg)"/>
+<rect width="1200" height="300" rx="20" fill="url(#bg)"/>
 
-<!-- Glow -->
+<!-- Decorative circles -->
 
-<circle cx="980" cy="70" r="90"
-fill="#8b5cf6"
-opacity=".15"
-filter="url(#glow)"/>
+<circle cx="1080" cy="60" r="90" fill="#8B5CF6" opacity=".08"/>
 
-<circle cx="180" cy="260" r="70"
-fill="#38bdf8"
-opacity=".12"
-filter="url(#glow)"/>
+<circle cx="120" cy="250" r="70" fill="#38BDF8" opacity=".08"/>
 
-<!-- Grid -->
-
-<g stroke="#ffffff08">
-
-<path d="M0 80H1200"/>
-
-<path d="M0 160H1200"/>
-
-<path d="M0 240H1200"/>
-
-<path d="M300 0V320"/>
-
-<path d="M600 0V320"/>
-
-<path d="M900 0V320"/>
-
-</g>
-
-<!-- Left -->
+<!-- Hi -->
 
 <text
-x="70"
-y="105"
-font-size="48"
+x="80"
+y="90"
+font-size="42"
+font-family="Segoe UI Emoji">
+
+👋
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+values="0 92 78;18 92 78;0 92 78;-10 92 78;0 92 78"
+dur="2s"
+repeatCount="indefinite"/>
+
+</text>
+
+<!-- Hi Text -->
+
+<text
+x="140"
+y="92"
+font-size="30"
 font-family="Segoe UI"
+fill="#E5E7EB">
+
+Hi, I'm
+
+</text>
+
+<!-- Name -->
+
+<text
+x="80"
+y="150"
+font-size="58"
 font-weight="700"
-fill="url(#text)">
+font-family="Segoe UI"
+fill="url(#name)">
 
 Danial Karimi
 
 </text>
 
+<!-- Title -->
+
 <text
-x="72"
-y="145"
-font-size="22"
+x="82"
+y="190"
+font-size="24"
 font-family="Segoe UI"
-fill="#E5E7EB">
+fill="#CBD5E1">
 
 AI Engineer • Computer Engineer
 
 </text>
 
-<text
-x="72"
-y="200"
-font-size="20"
-font-family="Consolas"
-fill="#38BDF8">
+<!-- Divider -->
 
-&gt; Building Intelligent Systems
-
-</text>
-
-<!-- Cursor -->
-
-<rect
-x="395"
-y="184"
-width="3"
-height="22"
-fill="#38BDF8">
-
-<animate
-attributeName="opacity"
-values="1;0;1"
-dur=".8s"
-repeatCount="indefinite"/>
-
-</rect>
+<line
+x1="80"
+x2="540"
+y1="210"
+y2="210"
+stroke="#334155"/>
 
 <!-- Skills -->
 
-<g font-family="Segoe UI" font-size="13">
+<text
+x="82"
+y="245"
+font-size="18"
+font-family="Consolas"
+fill="#38BDF8">
 
-<rect x="72" y="235" width="80" height="26" rx="13" fill="#7c3aed55"/>
-<text x="93" y="252" fill="white">Python</text>
+Python • C# • AI • Machine Learning • Linux • Git
 
-<rect x="165" y="235" width="55" height="26" rx="13" fill="#38bdf855"/>
-<text x="184" y="252" fill="white">C#</text>
+</text>
 
-<rect x="232" y="235" width="90" height="26" rx="13" fill="#06b6d455"/>
-<text x="248" y="252" fill="white">PyTorch</text>
-
-<rect x="335" y="235" width="105" height="26" rx="13" fill="#9333ea55"/>
-<text x="349" y="252" fill="white">TensorFlow</text>
-
-</g>
-
-<!-- Right Neural -->
-
-<g
-stroke="#38BDF8"
-stroke-width="2"
-fill="none"
-opacity=".9">
-
-<circle cx="860" cy="85" r="5" fill="#38BDF8"/>
-<circle cx="930" cy="55" r="5" fill="#38BDF8"/>
-<circle cx="1015" cy="90" r="5" fill="#38BDF8"/>
-<circle cx="1065" cy="155" r="5" fill="#38BDF8"/>
-<circle cx="1020" cy="235" r="5" fill="#38BDF8"/>
-<circle cx="930" cy="255" r="5" fill="#38BDF8"/>
-<circle cx="850" cy="205" r="5" fill="#38BDF8"/>
-<circle cx="825" cy="140" r="5" fill="#38BDF8"/>
-
-<path d="M860 85L930 55L1015 90L1065 155L1020 235L930 255L850 205L825 140Z"/>
-
-<path d="M860 85L930 255"/>
-
-<path d="M930 55L850 205"/>
-
-<path d="M825 140L1015 90"/>
-
-<path d="M850 205L1065 155"/>
-
-</g>
-
-<!-- Pulse -->
-
-<circle
-cx="930"
-cy="155"
-r="8"
-fill="#8b5cf6">
-
-<animate
-attributeName="r"
-values="8;14;8"
-dur="2s"
-repeatCount="indefinite"/>
-
-</circle>
+<!-- Quote -->
 
 <text
-x="845"
-y="290"
-font-size="15"
-font-family="Consolas"
-fill="#8b5cf6">
+x="82"
+y="275"
+font-size="18"
+font-family="Segoe UI"
+fill="#94A3B8">
 
-Neural Network
+Building Intelligent Systems.
 
 </text>
 
