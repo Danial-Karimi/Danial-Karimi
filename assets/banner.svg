@@ -1,180 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 1280 420"
-     width="1280"
-     height="420">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320">
 
 <defs>
 
-<!-- Background -->
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#050816"/>
-    <stop offset="55%" stop-color="#0B1120"/>
-    <stop offset="100%" stop-color="#1B0F3F"/>
+<linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#050816"/>
+<stop offset="100%" stop-color="#0f172a"/>
 </linearGradient>
 
-<!-- Text -->
-<linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#9F67FF"/>
-    <stop offset="100%" stop-color="#36CFFF"/>
+<linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#8b5cf6"/>
+<stop offset="100%" stop-color="#38bdf8"/>
 </linearGradient>
 
-<!-- Glass -->
-<linearGradient id="glass">
-    <stop offset="0%" stop-color="#FFFFFF18"/>
-    <stop offset="100%" stop-color="#FFFFFF05"/>
-</linearGradient>
-
-<!-- Glow -->
 <filter id="glow">
-    <feGaussianBlur stdDeviation="5"/>
-</filter>
-
-<filter id="blur">
-    <feGaussianBlur stdDeviation="35"/>
+<feGaussianBlur stdDeviation="3"/>
 </filter>
 
 </defs>
 
 <!-- Background -->
 
-<rect width="1280" height="420" fill="url(#bg)"/>
+<rect width="1200" height="320" fill="url(#bg)"/>
 
-<!-- Purple Glow -->
+<!-- Glow -->
 
-<circle
-cx="1090"
-cy="110"
-r="140"
-fill="#6D28D9"
-opacity=".22"
-filter="url(#blur)"/>
+<circle cx="980" cy="70" r="90"
+fill="#8b5cf6"
+opacity=".15"
+filter="url(#glow)"/>
 
-<!-- Blue Glow -->
-
-<circle
-cx="180"
-cy="350"
-r="95"
-fill="#38BDF8"
-opacity=".18"
-filter="url(#blur)"/>
+<circle cx="180" cy="260" r="70"
+fill="#38bdf8"
+opacity=".12"
+filter="url(#glow)"/>
 
 <!-- Grid -->
 
 <g stroke="#ffffff08">
 
-<path d="M0 70H1280"/>
-<path d="M0 140H1280"/>
-<path d="M0 210H1280"/>
-<path d="M0 280H1280"/>
-<path d="M0 350H1280"/>
+<path d="M0 80H1200"/>
 
-<path d="M160 0V420"/>
-<path d="M320 0V420"/>
-<path d="M480 0V420"/>
-<path d="M640 0V420"/>
-<path d="M800 0V420"/>
-<path d="M960 0V420"/>
-<path d="M1120 0V420"/>
+<path d="M0 160H1200"/>
+
+<path d="M0 240H1200"/>
+
+<path d="M300 0V320"/>
+
+<path d="M600 0V320"/>
+
+<path d="M900 0V320"/>
 
 </g>
 
-<!-- Decorative circuit -->
-
-<g
-stroke="#4F9FFF"
-stroke-opacity=".15"
-fill="none">
-
-<path d="M0 390H180L240 330H410"/>
-
-<path d="M1280 30H1080L1010 80H900"/>
-
-<path d="M850 0V60"/>
-
-<path d="M420 420V360"/>
-
-</g>
-
-<!-- Glass Main Card -->
-
-<rect
-x="55"
-y="55"
-width="705"
-height="310"
-rx="26"
-fill="url(#glass)"
-stroke="#FFFFFF20"/>
-
-<!-- HUD Corner -->
-
-<path
-d="M55 90V55H90"
-stroke="#38BDF8"
-stroke-width="2"
-fill="none"/>
-
-<path
-d="M725 55H760V90"
-stroke="#38BDF8"
-stroke-width="2"
-fill="none"/>
-
-<path
-d="M55 330V365H90"
-stroke="#A855F7"
-stroke-width="2"
-fill="none"/>
-
-<path
-d="M725 365H760V330"
-stroke="#A855F7"
-stroke-width="2"
-fill="none"/>
-
-<!-- Status -->
-
-<circle cx="82" cy="82" r="5" fill="#22C55E">
-<animate
-attributeName="opacity"
-values="1;.3;1"
-dur="2s"
-repeatCount="indefinite"/>
-</circle>
+<!-- Left -->
 
 <text
-x="98"
-y="87"
-font-size="14"
-font-family="Consolas"
-fill="#8AFFA6">
-
-SYSTEM ONLINE
-
-</text>
-
-<!-- Title -->
-
-<text
-x="90"
-y="155"
-font-size="62"
-font-weight="700"
+x="70"
+y="105"
+font-size="48"
 font-family="Segoe UI"
-fill="url(#title)"
-filter="url(#glow)">
+font-weight="700"
+fill="url(#text)">
 
 Danial Karimi
 
 </text>
 
-<!-- Subtitle -->
-
 <text
-x="92"
-y="198"
-font-size="26"
+x="72"
+y="145"
+font-size="22"
 font-family="Segoe UI"
 fill="#E5E7EB">
 
@@ -182,942 +77,106 @@ AI Engineer • Computer Engineer
 
 </text>
 
-<!-- Divider -->
-
-<line
-x1="92"
-x2="720"
-y1="218"
-y2="218"
-stroke="#ffffff15"/>
-
-<!-- Typing Placeholder -->
-
 <text
-x="92"
-y="250"
-font-size="22"
+x="72"
+y="200"
+font-size="20"
 font-family="Consolas"
-fill="#36CFFF">
-
-<!-- typing.svg will be placed here -->
-
-</text>
-
-<!-- Skills -->
-
-<g font-family="Segoe UI" font-size="15">
-
-<rect x="92" y="290" rx="12" width="82" height="28" fill="#7C3AED55"/>
-<text x="113" y="309" fill="white">Python</text>
-
-<rect x="184" y="290" rx="12" width="56" height="28" fill="#38BDF855"/>
-<text x="204" y="309" fill="white">C#</text>
-
-<rect x="250" y="290" rx="12" width="108" height="28" fill="#06B6D455"/>
-<text x="270" y="309" fill="white">PyTorch</text>
-
-<rect x="368" y="290" rx="12" width="118" height="28" fill="#9333EA55"/>
-<text x="388" y="309" fill="white">TensorFlow</text>
-
-<rect x="498" y="290" rx="12" width="76" height="28" fill="#0EA5E955"/>
-<text x="522" y="309" fill="white">Git</text>
-
-<rect x="584" y="290" rx="12" width="86" height="28" fill="#14B8A655"/>
-<text x="607" y="309" fill="white">Linux</text>
-
-</g>
-
-<!-- HUD Right Placeholder -->
-
-<rect
-x="840"
-y="55"
-width="385"
-height="310"
-rx="24"
-fill="#09111F66"
-stroke="#38BDF820"/>
-
-<text
-x="870"
-y="90"
-font-size="18"
-font-family="Consolas"
-fill="#8B5CF6">
-
-NEURAL INTERFACE
-
-</text>
-
-<line
-x1="870"
-x2="1185"
-y1="105"
-y2="105"
-stroke="#38BDF830"/>
-
-<!-- brain.svg goes here -->
-<!-- ========================= -->
-<!--      AI BRAIN MODULE      -->
-<!-- ========================= -->
-
-<g id="brain" transform="translate(845 45)">
-
-  <!-- Glow -->
-  <ellipse cx="190" cy="145" rx="125" ry="110"
-           fill="#6D28D9"
-           opacity=".08">
-      <animate attributeName="opacity"
-               values=".05;.15;.05"
-               dur="5s"
-               repeatCount="indefinite"/>
-  </ellipse>
-
-  <!-- Connections -->
-
-  <g stroke="#5EEAD4"
-     stroke-width="1.5"
-     opacity=".45"
-     fill="none">
-
-    <path d="M120 70 L180 45"/>
-    <path d="M180 45 L245 65"/>
-    <path d="M245 65 L290 110"/>
-    <path d="M290 110 L270 175"/>
-    <path d="M270 175 L215 225"/>
-    <path d="M215 225 L145 220"/>
-    <path d="M145 220 L90 165"/>
-    <path d="M90 165 L95 95"/>
-    <path d="M95 95 L120 70"/>
-
-    <path d="M180 45 L180 120"/>
-    <path d="M180 120 L145 220"/>
-    <path d="M180 120 L245 65"/>
-    <path d="M180 120 L270 175"/>
-    <path d="M120 70 L180 120"/>
-    <path d="M95 95 L180 120"/>
-    <path d="M145 220 L215 225"/>
-    <path d="M245 65 L215 225"/>
-
-  </g>
-
-  <!-- Animated Pulse Line -->
-
-  <path d="M120 70 L180 45 L245 65 L290 110 L270 175 L215 225"
-        stroke="#38BDF8"
-        stroke-width="3"
-        stroke-linecap="round"
-        fill="none"
-        stroke-dasharray="25 500">
-
-      <animate attributeName="stroke-dashoffset"
-               from="520"
-               to="0"
-               dur="3.5s"
-               repeatCount="indefinite"/>
-
-  </path>
-
-  <!-- Nodes -->
-
-  <g fill="#67E8F9">
-
-    <circle cx="120" cy="70" r="5">
-      <animate attributeName="r"
-               values="5;8;5"
-               dur="2.3s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="180" cy="45" r="6">
-      <animate attributeName="fill"
-               values="#67E8F9;#A855F7;#67E8F9"
-               dur="3s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="245" cy="65" r="5">
-      <animate attributeName="r"
-               values="5;7;5"
-               dur="2.8s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="290" cy="110" r="5"/>
-    <circle cx="270" cy="175" r="6"/>
-    <circle cx="215" cy="225" r="5"/>
-    <circle cx="145" cy="220" r="5"/>
-    <circle cx="90" cy="165" r="5"/>
-    <circle cx="95" cy="95" r="5"/>
-
-    <circle cx="180" cy="120" r="8">
-
-      <animate attributeName="r"
-               values="8;13;8"
-               dur="2s"
-               repeatCount="indefinite"/>
-
-      <animate attributeName="fill"
-               values="#38BDF8;#A855F7;#38BDF8"
-               dur="4s"
-               repeatCount="indefinite"/>
-
-    </circle>
-
-  </g>
-
-  <!-- Floating Particles -->
-
-  <g fill="#38BDF8">
-
-    <circle cx="55" cy="65" r="2">
-      <animate attributeName="cy"
-               values="65;50;65"
-               dur="4s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="325" cy="85" r="2">
-      <animate attributeName="cy"
-               values="85;65;85"
-               dur="5s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="320" cy="215" r="2">
-      <animate attributeName="cy"
-               values="215;195;215"
-               dur="6s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="60" cy="220" r="2">
-      <animate attributeName="cy"
-               values="220;195;220"
-               dur="5s"
-               repeatCount="indefinite"/>
-    </circle>
-
-  </g>
-
-  <!-- AI Label -->
-
-  <text x="110"
-        y="275"
-        font-family="Consolas"
-        font-size="15"
-        fill="#8B5CF6">
-
-      AI Neural Core
-
-  </text>
-
-  <line x1="110"
-        y1="283"
-        x2="255"
-        y2="283"
-        stroke="#38BDF840"/>
-
-</g>
-<!-- hud.svg goes here -->
-<!-- ========================= -->
-<!--       HUD MODULE          -->
-<!-- ========================= -->
-
-<g id="hud" transform="translate(850 65)">
-
-<!-- Corner -->
-<path d="M0 20V0H20"
-      stroke="#38BDF8"
-      stroke-width="2"
-      fill="none"/>
-
-<path d="M330 0H350V20"
-      stroke="#38BDF8"
-      stroke-width="2"
-      fill="none"/>
-
-<!-- Header -->
-
-<text x="18"
-      y="32"
-      fill="#E5E7EB"
-      font-size="18"
-      font-family="Segoe UI"
-      font-weight="600">
-
-AI SYSTEM STATUS
-
-</text>
-
-<line x1="18"
-      y1="44"
-      x2="330"
-      y2="44"
-      stroke="#ffffff20"/>
-
-<!-- GPU -->
-
-<text x="18"
-      y="76"
-      fill="#94A3B8"
-      font-size="13"
-      font-family="Consolas">
-
-GPU Compute
-
-</text>
-
-<rect x="120"
-      y="65"
-      width="180"
-      height="10"
-      rx="5"
-      fill="#ffffff10"/>
-
-<rect x="120"
-      y="65"
-      width="150"
-      height="10"
-      rx="5"
-      fill="#38BDF8">
-
-<animate
-attributeName="width"
-values="140;165;150;170;150"
-dur="6s"
-repeatCount="indefinite"/>
-
-</rect>
-
-<text x="310"
-      y="75"
-      fill="#38BDF8"
-      font-size="12"
-      font-family="Consolas">
-
-87%
-
-</text>
-
-<!-- CPU -->
-
-<text x="18"
-      y="104"
-      fill="#94A3B8"
-      font-size="13"
-      font-family="Consolas">
-
-CPU Threads
-
-</text>
-
-<rect x="120"
-      y="93"
-      width="180"
-      height="10"
-      rx="5"
-      fill="#ffffff10"/>
-
-<rect x="120"
-      y="93"
-      width="95"
-      height="10"
-      rx="5"
-      fill="#8B5CF6">
-
-<animate
-attributeName="width"
-values="85;110;95"
-dur="5s"
-repeatCount="indefinite"/>
-
-</rect>
-
-<text x="310"
-      y="103"
-      fill="#A855F7"
-      font-size="12"
-      font-family="Consolas">
-
-52%
-
-</text>
-
-<!-- Memory -->
-
-<text x="18"
-      y="132"
-      fill="#94A3B8"
-      font-size="13"
-      font-family="Consolas">
-
-Memory
-
-</text>
-
-<rect x="120"
-      y="121"
-      width="180"
-      height="10"
-      rx="5"
-      fill="#ffffff10"/>
-
-<rect x="120"
-      y="121"
-      width="130"
-      height="10"
-      rx="5"
-      fill="#22D3EE">
-
-<animate
-attributeName="width"
-values="120;145;130"
-dur="7s"
-repeatCount="indefinite"/>
-
-</rect>
-
-<!-- AI Core -->
-
-<rect
-x="15"
-y="160"
-width="320"
-height="95"
-rx="18"
-fill="#ffffff05"
-stroke="#ffffff15"/>
-
-<text x="35"
-      y="186"
-      fill="#38BDF8"
-      font-family="Consolas"
-      font-size="14">
-
-AI CORE
-
-</text>
-
-<text x="35"
-      y="214"
-      fill="#E5E7EB"
-      font-size="13"
-      font-family="Segoe UI">
-
-Neural Network Online
-
-</text>
-
-<text x="35"
-      y="236"
-      fill="#94A3B8"
-      font-size="12"
-      font-family="Segoe UI">
-
-Inference Engine Active
-
-</text>
-
-<circle
-cx="285"
-cy="208"
-r="7"
-fill="#22C55E">
-
-<animate
-attributeName="opacity"
-values="1;.25;1"
-dur="1.5s"
-repeatCount="indefinite"/>
-
-</circle>
-
-<!-- Activity Graph -->
-
-<text x="18"
-      y="285"
-      fill="#38BDF8"
-      font-size="14"
-      font-family="Consolas">
-
-Activity
-
-</text>
-
-<polyline
-
-fill="none"
-
-stroke="#38BDF8"
-
-stroke-width="2"
-
-points="
-18,330
-45,320
-72,325
-99,295
-126,310
-153,280
-180,295
-207,250
-234,270
-261,240
-288,260
-315,225">
-
-<animate
-attributeName="points"
-dur="5s"
-repeatCount="indefinite"
-
-values="
-18,330 45,320 72,325 99,295 126,310 153,280 180,295 207,250 234,270 261,240 288,260 315,225;
-
-18,325 45,300 72,315 99,285 126,295 153,265 180,285 207,240 234,255 261,220 288,245 315,205;
-
-18,330 45,320 72,325 99,295 126,310 153,280 180,295 207,250 234,270 261,240 288,260 315,225"/>
-
-</polyline>
-
-<!-- Footer -->
-
-<text x="18"
-      y="355"
-      fill="#64748B"
-      font-size="11"
-      font-family="Consolas">
-
-OpenAI Inspired • Neural Interface v2.6
-
-</text>
-
-</g>
-<!-- particles.svg goes here -->
-
-<!-- ========================= -->
-<!--     PARTICLES MODULE      -->
-<!-- ========================= -->
-
-<g id="particles">
-
-<!-- Floating Particles -->
-
-<g fill="#38BDF8">
-
-<circle cx="85" cy="65" r="2">
-<animate attributeName="cy"
-values="65;40;65"
-dur="6s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="310" cy="95" r="2">
-<animate attributeName="cy"
-values="95;70;95"
-dur="5s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="640" cy="55" r="2">
-<animate attributeName="cy"
-values="55;25;55"
-dur="7s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1020" cy="75" r="2">
-<animate attributeName="cy"
-values="75;45;75"
-dur="6s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1180" cy="290" r="2">
-<animate attributeName="cy"
-values="290;255;290"
-dur="8s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="760" cy="340" r="2">
-<animate attributeName="cy"
-values="340;300;340"
-dur="6s"
-repeatCount="indefinite"/>
-</circle>
-
-</g>
-
-<!-- Stars -->
-
-<g fill="#ffffff">
-
-<circle cx="160" cy="42" r="1.4">
-<animate attributeName="opacity"
-values=".2;1;.2"
-dur="3s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="510" cy="32" r="1.2">
-<animate attributeName="opacity"
-values=".2;1;.2"
-dur="5s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="930" cy="55" r="1.5">
-<animate attributeName="opacity"
-values=".3;1;.3"
-dur="4s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1195" cy="45" r="1.3">
-<animate attributeName="opacity"
-values=".2;1;.2"
-dur="6s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1120" cy="360" r="1.5">
-<animate attributeName="opacity"
-values=".2;1;.2"
-dur="5s"
-repeatCount="indefinite"/>
-</circle>
-
-</g>
-
-<!-- Pulse Rings -->
-
-<circle
-cx="1040"
-cy="120"
-r="45"
-fill="none"
-stroke="#38BDF8"
-stroke-width="1"
-opacity=".35">
-
-<animate
-attributeName="r"
-values="45;90"
-dur="4s"
-repeatCount="indefinite"/>
-
-<animate
-attributeName="opacity"
-values=".45;0"
-dur="4s"
-repeatCount="indefinite"/>
-
-</circle>
-
-<circle
-cx="1040"
-cy="120"
-r="45"
-fill="none"
-stroke="#A855F7"
-stroke-width="1"
-opacity=".25">
-
-<animate
-attributeName="r"
-values="45;120"
-dur="5s"
-repeatCount="indefinite"/>
-
-<animate
-attributeName="opacity"
-values=".3;0"
-dur="5s"
-repeatCount="indefinite"/>
-
-</circle>
-
-<!-- Scan Line -->
-
-<rect
-x="0"
-y="0"
-width="1280"
-height="2"
-fill="#38BDF8"
-opacity=".45">
-
-<animate
-attributeName="y"
-values="0;420;0"
-dur="10s"
-repeatCount="indefinite"/>
-
-</rect>
-
-<!-- HUD Blips -->
-
-<g fill="#22D3EE">
-
-<circle cx="835" cy="55" r="3">
-<animate attributeName="opacity"
-values="1;.1;1"
-dur="1.5s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1220" cy="55" r="3">
-<animate attributeName="opacity"
-values="1;.1;1"
-dur="2.2s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="1220" cy="365" r="3">
-<animate attributeName="opacity"
-values="1;.1;1"
-dur="2.8s"
-repeatCount="indefinite"/>
-</circle>
-
-<circle cx="835" cy="365" r="3">
-<animate attributeName="opacity"
-values="1;.1;1"
-dur="1.8s"
-repeatCount="indefinite"/>
-</circle>
-
-</g>
-
-<!-- Moving Glow -->
-
-<circle
-cx="0"
-cy="210"
-r="110"
-fill="#38BDF8"
-opacity=".06">
-
-<animate
-attributeName="cx"
-values="-100;1380"
-dur="16s"
-repeatCount="indefinite"/>
-
-</circle>
-
-<circle
-cx="1280"
-cy="120"
-r="140"
-fill="#A855F7"
-opacity=".05">
-
-<animate
-attributeName="cx"
-values="1380;-120"
-dur="18s"
-repeatCount="indefinite"/>
-
-</circle>
-
-</g>
-  
-<!-- ========================= -->
-<!--      TYPING MODULE        -->
-<!-- ========================= -->
-
-<defs>
-
-<clipPath id="typingClip">
-
-<rect x="92" y="226" width="0" height="24">
-
-<animate
-attributeName="width"
-dur="16s"
-repeatCount="indefinite"
-
-values="
-0;
-250;
-250;
-0;
-0;
-290;
-290;
-0;
-0;
-265;
-265;
-0"
-
-keyTimes="
-0;
-0.12;
-0.24;
-0.28;
-0.33;
-0.45;
-0.57;
-0.61;
-0.66;
-0.78;
-0.90;
-1"/>
-
-</rect>
-
-</clipPath>
-
-</defs>
-
-<!-- Animated Text -->
-
-<g clip-path="url(#typingClip)">
-
-<text
-id="typingText"
-x="92"
-y="248"
-font-family="Consolas"
-font-size="22"
 fill="#38BDF8">
 
-<tspan>
-
-<animate
-attributeName="text"
-
-dur="16s"
-
-repeatCount="indefinite"
-
-values="
-
-&gt; AI Engineer;
-
-&gt; AI Engineer;
-
-&gt; AI Engineer;
-
-&gt; AI Engineer;
-
-&gt; Computer Engineer;
-
-&gt; Computer Engineer;
-
-&gt; Computer Engineer;
-
-&gt; Computer Engineer;
-
-&gt; Building Intelligent Systems;
-
-&gt; Building Intelligent Systems;
-
-&gt; Building Intelligent Systems;
-
-&gt; AI Engineer
-
-"/>
-
-</tspan>
+&gt; Building Intelligent Systems
 
 </text>
-
-</g>
 
 <!-- Cursor -->
 
 <rect
-x="92"
-y="228"
+x="395"
+y="184"
 width="3"
 height="22"
-rx="2"
 fill="#38BDF8">
-
-<animate
-attributeName="x"
-
-dur="16s"
-
-repeatCount="indefinite"
-
-values="
-
-92;
-235;
-235;
-92;
-
-92;
-300;
-300;
-92;
-
-92;
-355;
-355;
-92
-
-"
-
-keyTimes="
-0;
-0.12;
-0.24;
-0.28;
-
-0.33;
-0.45;
-0.57;
-0.61;
-
-0.66;
-0.78;
-0.90;
-1"/>
 
 <animate
 attributeName="opacity"
 values="1;0;1"
-dur=".75s"
+dur=".8s"
 repeatCount="indefinite"/>
 
 </rect>
 
-<!-- Prompt -->
+<!-- Skills -->
+
+<g font-family="Segoe UI" font-size="13">
+
+<rect x="72" y="235" width="80" height="26" rx="13" fill="#7c3aed55"/>
+<text x="93" y="252" fill="white">Python</text>
+
+<rect x="165" y="235" width="55" height="26" rx="13" fill="#38bdf855"/>
+<text x="184" y="252" fill="white">C#</text>
+
+<rect x="232" y="235" width="90" height="26" rx="13" fill="#06b6d455"/>
+<text x="248" y="252" fill="white">PyTorch</text>
+
+<rect x="335" y="235" width="105" height="26" rx="13" fill="#9333ea55"/>
+<text x="349" y="252" fill="white">TensorFlow</text>
+
+</g>
+
+<!-- Right Neural -->
+
+<g
+stroke="#38BDF8"
+stroke-width="2"
+fill="none"
+opacity=".9">
+
+<circle cx="860" cy="85" r="5" fill="#38BDF8"/>
+<circle cx="930" cy="55" r="5" fill="#38BDF8"/>
+<circle cx="1015" cy="90" r="5" fill="#38BDF8"/>
+<circle cx="1065" cy="155" r="5" fill="#38BDF8"/>
+<circle cx="1020" cy="235" r="5" fill="#38BDF8"/>
+<circle cx="930" cy="255" r="5" fill="#38BDF8"/>
+<circle cx="850" cy="205" r="5" fill="#38BDF8"/>
+<circle cx="825" cy="140" r="5" fill="#38BDF8"/>
+
+<path d="M860 85L930 55L1015 90L1065 155L1020 235L930 255L850 205L825 140Z"/>
+
+<path d="M860 85L930 255"/>
+
+<path d="M930 55L850 205"/>
+
+<path d="M825 140L1015 90"/>
+
+<path d="M850 205L1065 155"/>
+
+</g>
+
+<!-- Pulse -->
 
 <circle
-cx="72"
-cy="243"
-r="4"
-fill="#22C55E">
+cx="930"
+cy="155"
+r="8"
+fill="#8b5cf6">
 
 <animate
-attributeName="opacity"
-
-values="1;.2;1"
-
+attributeName="r"
+values="8;14;8"
 dur="2s"
-
 repeatCount="indefinite"/>
 
 </circle>
 
 <text
-x="58"
-y="248"
-font-size="13"
+x="845"
+y="290"
+font-size="15"
 font-family="Consolas"
-fill="#22C55E">
+fill="#8b5cf6">
 
->
+Neural Network
 
 </text>
-  
+
 </svg>
